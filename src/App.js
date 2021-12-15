@@ -1,36 +1,45 @@
-import './App.css';
-import Header from './components/Header';
+import "./App.css";
+import Header from "./Components/Header";
 
-import { useState } from 'react';
-import FeatureSection from './components/FeatureSection';
-import PocketSection from './components/PocketSection';
-import CitySection from './components/CitySection.js';
-import ActionSection from './components/ActionSection';
-import Footer from './components/Footer';
-import Slider from './components/Slider';
-import SignIn from './components/SignIn';
-import Login from './components/Login';
-// import LogIn from './components/LogIn';
+import { useState } from "react";
+import FeatureSection from "./Components/FeatureSection";
+import PocketSection from "./Components/PocketSection";
+import CitySection from "./Components/CitySection.js";
+import ActionSection from "./Components/ActionSection";
+import Footer from "./Components/Footer";
+import Slider from "./Components/Slider";
+import SignIn from "./Components/SignIn";
+import Login from "./Components/Login";
 
-function App (){
+function App() {
+  return (
+    <div className="App">
+      <div className="header123">
+        <Header />
+      </div>
 
-   
+      <div className="brightlow">
+        <div className="feature123">
+          <FeatureSection />
+        </div>
+        <div className="pocket123">
+          {" "}
+          <PocketSection />
+        </div>
+        <div className="action123">
+          {" "}
+          <ActionSection />
+        </div>
 
- 
-        return (
-            <div className="App">
-            <div className="header123"><Header/></div>
-           
-<div className="brightlow">
-            <div className="feature123"><FeatureSection/></div>
-            <div className="pocket123"> <PocketSection/></div>
-            <div className="action123"> <ActionSection/></div>
-            
-            <div className="city123"><CitySection/></div>
-            <div className="footer123"><Footer/></div>
-            </div></div>
-        
-    );
+        <div className="city123">
+          <CitySection />
+        </div>
+        <div className="footer123">
+          <Footer />
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default App;
